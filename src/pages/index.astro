@@ -1,8 +1,16 @@
 ---
 import Layout from './../layouts/Layout.astro'
+import Header from './../components/Header.astro'
 ---
 <Layout>
-	<div class="dark:bg-slate-500">
-		<h1>XD</h1>
-	</div>
+	<Header></Header>
+	<main class="bg-slate-900 h-screen container mx-auto">
+		<section>
+			<h2>hola</h2>
+			<details class="bg-cyan-900">
+				<summary>DD</summary>
+				<p>Hola</p>
+			</details>
+		</section>
+	</main>
 </Layout>
