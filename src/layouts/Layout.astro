@@ -1,22 +1,16 @@
----
-// interface Props {
-// 	title: string;
-// }
-
-// const { title } = Astro.props;
----
-
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- HTML Meta Tags -->
     <title>UnCompa | Portafolio - Landing Page ✨</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Página donde se destacara los trabajos y habilidades."
     />
-	<meta name="theme-color" content="#0af">
-	<meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0af" />
+    <meta name="color-scheme" content="dark" />
     <!-- Facebook Meta Tags -->
     <meta
       property="og:url"
@@ -55,8 +49,16 @@
       content="https://uncompa.github.io./newportafolio/index.png"
     />
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <!--Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&family=Inter&family=Montserrat&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./newportafolio/logos/9.png" type="image/x-icon">
   </head>
-  <body class="bg-slate-900">
+  <body class="bg-primario">
     <slot />
   </body>
 </html>

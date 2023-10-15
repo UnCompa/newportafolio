@@ -1,16 +1,12 @@
 ---
-import Layout from './../layouts/Layout.astro'
-import Header from './../components/Header.astro'
+import Layout from "./../layouts/Layout.astro";
+import Header from "./../components/Header.astro";
+import Inicio from './../components/Inicio.astro'
 ---
+
 <Layout>
-	<Header></Header>
-	<main class="bg-slate-900 h-screen container mx-auto">
-		<section>
-			<h2>hola</h2>
-			<details class="bg-cyan-900">
-				<summary>DD</summary>
-				<p>Hola</p>
-			</details>
-		</section>
-	</main>
+  <Header />
+  <main class="bg-transparent h-screen container mx-auto">
+    <Inicio/>
+  </main>
 </Layout>
