@@ -1,12 +1,14 @@
 ---
 import Layout from "./../layouts/Layout.astro";
-import Header from "./../components/Header.astro";
+import Header from "../components/Header.jsx";
 import Inicio from './../components/Inicio.astro'
 ---
 
 <Layout>
-  <Header />
+  <Header client:load />
   <main class="bg-transparent h-screen container mx-auto">
+    <Inicio/>
+    <Inicio/>
     <Inicio/>
   </main>
 </Layout>
