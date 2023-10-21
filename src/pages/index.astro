@@ -2,13 +2,17 @@
 import Layout from "./../layouts/Layout.astro";
 import Header from "../components/Header.jsx";
 import Inicio from './../components/Inicio.astro'
+import Card from "../components/Card";
 ---
 
 <Layout>
   <Header client:load />
-  <main class="bg-transparent h-screen container mx-auto">
+  <main class="bg-transparent h-full w-full relative top container mx-auto">
     <Inicio/>
-    <Inicio/>
-    <Inicio/>
+    <section class="h-full gap-y-10 font-Gabarito">
+      <h2 class="underline decoration-sky-500 text-4xl text-center mb-4 border-b-2 border-t-2 border-gray-500 py-8">Proyectos</h2>
+      <Card title='Proyecto' text='Hola que tal hoy haremos un text bien insano' color1='decoration-blue-500' color2='bg-blue-500'/>
+      <Card title='Proyecto' text='Hola que tal hoy haremos un text bien insano' color1='decoration-green-500' color2='bg-green-500'/>
+    </section>
   </main>
 </Layout>
