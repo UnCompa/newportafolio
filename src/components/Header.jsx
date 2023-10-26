@@ -28,7 +28,7 @@ export default function Header() {
         <path d="M10 18h10"></path>
 </svg>
       </button>
-      <Nav type={nav ? "-right-full" : "right-0"} />
+      <Nav type={nav ? "-right-[24rem]" : "right-[9rem]"} />
     </header>
   );
 }
