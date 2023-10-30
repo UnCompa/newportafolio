@@ -1,0 +1,10 @@
+---
+interface Props {
+    color?: String;
+    border?: String;
+}
+const {color,border} = Astro.props
+console.log(color);
+
+---
+<div class={`grid place-items-center h-48 w-48 bg-slate-800/20 hover:bg-slate-800/50 text-8xl shadow-lg ${color} border-b-4 ${border}`}><slot/></div>
