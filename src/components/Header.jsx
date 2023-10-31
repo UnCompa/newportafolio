@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Nav from "./Nav.jsx";
 export default function Header() {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   function handleClick() {
     setNav(!nav);
     console.log("Hola");
@@ -28,7 +28,7 @@ export default function Header() {
         <path d="M10 18h10"></path>
 </svg>
       </button>
-      <Nav type={nav ? "-right-[24rem]" : "right-[9rem]"} />
+      <Nav type={nav ? "right-0" : "-right-[100vw]"} />
     </header>
   );
 }

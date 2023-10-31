@@ -1,6 +1,12 @@
+import {motion, inView, easeIn} from 'framer-motion'
 export default function Card({title,color1,color2,text}) {
   return (
-    <div className="w-full h-full grid grid-rows-2 grid-cols-1">
+    <motion.div 
+    initial={{opacity: 0, y: 10}}
+    whileInView={{opacity: 1, y: 0}}
+    viewport={{once: false}}
+    transition={{transition:1, ease: easeIn}}
+    className="w-full h-full grid grid-rows-2 grid-cols-1">
         <div className="hover:ring-2 hover:ring-white my-4">
             <img src="/newportafolio/gato.jpg" alt="Proyecto" className="w-full h-72 bg-slate-800 object-cover" />
         </div>
@@ -9,6 +15,6 @@ export default function Card({title,color1,color2,text}) {
             <p className="text-gray-100 pb-2">{text}</p>
             <button className={`rounded px-8 py-1 ${color2}`}>Ir</button>
         </div>
-    </div>
+    </motion.div>
   )
 }
