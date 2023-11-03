@@ -6,7 +6,7 @@ export default function Skills({color, border, children}) {
       whileInView={{ opacity: 1 , scale: 1}}
       transition={{transition: 2}}
       // viewport={{ once: true }}
-      className={`grid place-items-center h-48 w-48 bg-slate-800/20 hover:bg-slate-800/50 text-8xl shadow-lg ${color} border-b-4 ${border}`}
+      className={`grid place-items-center h-48 w-48 bg-slate-800/20 hover:bg-slate-950/50 hover:shadow-xl hover:shadow-slate-950 text-8xl shadow-lg ${color} border-b-4 ${border} transition-colors`}
     >
       {children}
     </motion.div>

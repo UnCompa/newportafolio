@@ -11,10 +11,10 @@ export default {
 				"Gabarito": ['Gabarito','system-ui'],
 			},
 			colors: {
-				"primario": "#101217",
-				"secundario": "#05183C",
-				"terceario": "#06296B",
-				"cuarto": "#1A3C7D",
+				"primario": "#151735",
+				"secundario": "#2a5c8b",
+				"terceario": "#4276a8",
+				"cuarto": "#e32265",
 			}
 		},
 	},
